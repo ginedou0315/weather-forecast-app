@@ -51,6 +51,22 @@ export default function Weather() {
             </div>
           </div>
         </main>
+        <footer>
+          This project was coded by{" "}
+          <a href="https://github.com/ginedou0315" target="_blank">
+            Ginelle Doubek, is open-sourced in{" "}
+            <a
+              href="https://github.com/ginedou0315/weather-forecast-app"
+              target="_blank"
+            >
+              Github
+            </a>{" "}
+            and hosted in{" "}
+            <a href="" target="_blank">
+              Netlify
+            </a>
+          </a>
+        </footer>
       </div>
     </div>
   );
