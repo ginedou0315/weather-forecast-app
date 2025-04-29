@@ -29,7 +29,7 @@ export default function Weather() {
           />
           <input type="submit" value="Search" className="search-button" />
         </form>
-        <h1 className="current-city py-3 ps-2">{weatherData.city}</h1>
+        <h1 className="current-city pt-3 ps-2">{weatherData.city}</h1>
         <ul className="current-details">
           <li>{weatherData.date}</li>
           <li>{weatherData.description}</li>
@@ -46,13 +46,13 @@ export default function Weather() {
           <div className="col-6">
             <ul className="current-details">
               <li>
+                Precipitation: <strong>{weatherData.precipitation}</strong>
+              </li>
+              <li>
                 Humidity: <strong>{weatherData.humidity}</strong>
               </li>
               <li>
                 Wind: <strong>{weatherData.wind}</strong>
-              </li>
-              <li>
-                Precipitation: <strong>{weatherData.precipitation}</strong>
               </li>
             </ul>
           </div>
