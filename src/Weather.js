@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+
 import axios from "axios";
 import "./Weather.css";
 
@@ -12,7 +13,7 @@ export default function Weather() {
     wind: "7.2km/h",
     precipitation: "15%",
     temperature: "18",
-    date: "Tuesday, 11:30, ",
+    date: "Tuesday 11:30 ",
     icon: "☀️",
   };
   return (
