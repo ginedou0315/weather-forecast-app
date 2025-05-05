@@ -8,20 +8,26 @@ export default function FormattedDate(props) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Satruday",
+    "Saturday",
   ];
-  let day = days[props.date.getDay()];
-  let hours = props.date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = props.date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+
+  // Convert props.date to a valid Date object
+  const date = props.date ? new Date(props.date) : new Date();
+
+  // Extract the day and month
+  const day = date.getDate();
+  const month = date.toLocaleString("en-US", { month: "long" });
+
+  // Get the day of the week
+  let weekday = days[date.getDay()];
+
+  // Format hours and minutes
+  let hours = date.getHours().toString().padStart(2, "0");
+  let minutes = date.getMinutes().toString().padStart(2, "0");
+
   return (
     <span>
-      {day} {hours}:{minutes}
+      {day} {month}, {weekday} {hours}:{minutes}
     </span>
   );
 }
