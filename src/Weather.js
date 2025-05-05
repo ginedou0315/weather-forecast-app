@@ -74,7 +74,7 @@ export default function Weather(props) {
           >
             Github
           </a>{" "}
-          and hosted in
+          and hosted in{" "}
           <a
             href="https://react-weatherforecast-app-version.netlify.app/"
             target="_blank"
