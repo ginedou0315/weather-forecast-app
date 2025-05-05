@@ -6,8 +6,8 @@ import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1 className="current-city pt-3 ps-2">{props.data.city}</h1>
-      <ul className="current-details">
+      <h1 className="current-city ps-2">{props.data.city}</h1>
+      <ul className="current-details-first">
         <li>
           <FormattedDate date={props.data.date} />
         </li>
@@ -23,8 +23,9 @@ export default function WeatherInfo(props) {
           </span>
           <span className="current-temperature-unit">°C</span>
         </div>
-        <div className="col-6">
-          <ul className="current-details">
+
+        <div className="col-6 ps-5 ">
+          <ul className="current-details-second">
             <li>
               Precipitation: <strong>%</strong>
             </li>
