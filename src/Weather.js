@@ -59,13 +59,18 @@ export default function Weather(props) {
         </div>
         <footer>
           This project was coded by{" "}
-          <a href="https://github.com/ginedou0315" target="_blank">
+          <a
+            href="https://github.com/ginedou0315"
+            rel="noreferrer"
+            target="_blank"
+          >
             Ginelle Doubek
           </a>
           , is open-sourced in{" "}
           <a
             href="https://github.com/ginedou0315/weather-forecast-app"
             target="_blank"
+            rel="noreferrer"
           >
             Github
           </a>{" "}
